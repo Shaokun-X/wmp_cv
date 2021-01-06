@@ -171,9 +171,8 @@ progress::-webkit-progress-bar {
     font-weight: bold;
 }
 
-.language progress {
+.language-proficiency {
     flex-basis: 28vw;
-
 }
 
 footer {
@@ -258,6 +257,9 @@ footer {
     }
     .collage-list, .project-list, .leadership-list, .language-list, .highlight-list {
         padding-inline-start: 0;
+    }
+    .language-proficiency {
+        flex-basis: 100%;
     }
 }
  /* Extra large devices (large desktops, 1200px and up) */
