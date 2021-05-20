@@ -7,9 +7,14 @@
     --grey-color: #999999;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     display: flex;
     justify-content: center;
+    color: var(--primary-color);
 }
 
 html {
@@ -73,7 +78,7 @@ img.avatar:hover {
 }
 
 .personal-info {
-    padding-left: 120px;
+    padding-left: 140px;
 }
 
 .name {
@@ -125,13 +130,13 @@ section {
 
 .project-name, .leadership-name {
     display: inline-block;
+    margin-bottom: 12px;
 }
 
 .project-time, .leadership-time {
     margin-left: 12px;
     color: var(--grey-color);
 }
-
 
 progress {
     border: none;
@@ -197,6 +202,64 @@ footer {
     background-color: var(--primary-color);
 }
 
+.github-star {
+    transition: 300ms linear;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: solid var(--secondary-color) 2px;
+    border-radius: 5px;
+    padding: 1px 4px;
+    margin-left: 10px;
+    font-size: small;
+    display: inline-block;
+}
+
+.github-star svg {
+    top: 2px;
+    fill: var(--primary-color);
+}
+
+.github-star:hover {
+    transition: 300ms linear;
+    border-color: var(--primary-color);
+}
+
+.icon-github svg {
+    height: 14px;
+    position: relative;
+}
+
+.tag-list {
+    padding: 0 40px;
+}
+
+.tag {
+    border-radius: 5px;
+    padding: 1px 4px;
+    background-color: var(--light-color);
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.tech-social-network {
+    margin-top: 10px;
+}
+
+.tech-social-network .icon {
+    margin-right: 5px;
+    transition: 300ms linear; 
+}
+
+.tech-social-network .icon svg:hover {
+    transform: scale(1.1);
+    transition: 300ms linear; 
+}
+
+.tech-social-network .icon svg{
+    height: 20px;
+}
+
 
 /* Responsive Styling */
 
@@ -237,7 +300,14 @@ footer {
     footer {
         padding-top: 36px;
     }
+    .github-star {
+        margin-left: 0;
+    }
+    .project-head {
+        margin-bottom: 20px;
+    }
 }
+
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 991.98px) {
     .wrapper {
@@ -261,6 +331,8 @@ footer {
     .language-proficiency {
         flex-basis: 100%;
     }
+
+
 }
  /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1199.98px) {
