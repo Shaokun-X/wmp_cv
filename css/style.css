@@ -306,6 +306,9 @@ footer {
     .project-head {
         margin-bottom: 20px;
     }
+    .tag-list {
+        padding: 0;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
