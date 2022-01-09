@@ -184,6 +184,23 @@ progress::-webkit-progress-bar {
 
 .language-proficiency {
     flex-basis: 28vw;
+    display: flex;
+    height: 0.5rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: var(--light-color);
+    border-radius: .25rem;
+}
+
+.percentage-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bright-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--secondary-color);
 }
 
 footer {
