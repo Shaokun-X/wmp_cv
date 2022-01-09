@@ -144,33 +144,6 @@ section {
     color: var(--grey-color);
 }
 
-progress {
-    border: none;
-    border-radius: 290486px;
-    display: block;
-    height: 5px;
-    overflow: hidden;
-    width: 100%;
-}
-
-/* For Firefox */ 
-progress::-moz-progress-bar { 
-    background: var(--light-color); 
-} 
-
-progress::-moz-progress-value { 
-    background: var(--secondary-color); 
-} 
-
-/* For Chrome or Safari */ 
-progress::-webkit-progress-value { 
-    background: var(--secondary-color); 
-} 
-
-progress::-webkit-progress-bar {
-    background: var(--light-color);
-}
-
 .language {
     display: flex;
     justify-content: start;
@@ -375,9 +348,8 @@ footer {
     .language-proficiency {
         flex-basis: 100%;
     }
-
-
 }
+
  /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1199.98px) {
     
