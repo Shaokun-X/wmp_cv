@@ -27,6 +27,11 @@ html {
     font-family: 'Work Sans', sans-serif;
     color: var(--primary-color);
     line-height: 1.4;
+    -webkit-print-color-adjust: exact;
+}
+
+div {
+    page-break-inside: avoid
 }
 
 .collage-list, .project-list, .leadership-list, .language-list, .highlight-list {
